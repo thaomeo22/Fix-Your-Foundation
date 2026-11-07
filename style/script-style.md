@@ -4,6 +4,7 @@ Khung rút từ `style/video-mau.mp4` (57s, ~150 từ tiếng Anh ≈ 180–230 
 
 ## Nguồn chủ đề
 - Rút gọn từ video kênh mẫu trong `studio.json` (`kenh_mau`), đúng lĩnh vực `linh_vuc`.
+- Nail: bảng tổng hợp 164 reels 4 kênh (sarkisian.sv, nailmartusa, koshkina.valeriya, nailzbyambz): Google Sheet `1nnVyUfuMqjCx9wKjhDDZLCGU03AMC9AHz1PY8XvNXvk`. Chọn theo cột "So với trung vị kênh", bỏ dạng bán khoá học / tiểu phẩm / livestream.
 - Kiểm tra chủ đề đã làm (`projects/`, `BOARD.md`) để không trùng — so cả đoạn mở đầu transcript, không chỉ tiêu đề.
 
 ## Cấu trúc 7 nhịp (45–60 giây)
@@ -16,6 +17,11 @@ Khung rút từ `style/video-mau.mp4` (57s, ~150 từ tiếng Anh ≈ 180–230 
 | 5 | **Dữ liệu thuyết phục** | 30–40 | "Và đây là số liệu khiến tôi thử: …" (1 con số, có nguồn, có ảnh chụp màn hình) |
 | 6 | **Kết quả cá nhân trước → sau** | 40–54 | "Sau 2 tháng, tôi từ … lên …; thời gian … giảm từ … còn …" — số thật của chủ kênh, đánh dấu **[xác nhận]** |
 | 7 | **Kết bỏ lửng / loop** | 54–60 | Câu đùa hoặc câu mở, dừng giữa chừng để người xem xem lại ("Chắc tôi nên mở khoá học vì…") |
+
+## Biến thể "mẹo kỹ thuật" (dùng cho nail)
+Nhịp 5 có thể là lời chuyên gia / hướng dẫn của hãng thay cho số liệu nghiên cứu (ghi rõ trong mục Nguồn là "không có số liệu").
+Nhịp 6 = **3–5 bước làm đúng** (đánh số "Một: … Hai: …", mỗi bước 1 dòng, quay cận tay) + 1 câu kết quả của chủ kênh **[xác nhận]**.
+Câu kết bỏ lửng nên dẫn sang video kế tiếp trong đợt.
 
 ## Giọng văn
 - Xưng hô theo `chu_kenh.xung_ho`. Câu ngắn, nhịp nói, có thể dùng từ cảm thán ("thật sự", "quá").
