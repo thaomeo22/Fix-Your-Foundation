@@ -1,0 +1,22 @@
+{
+  "_ghi_chu": "Copy thành studio.json. Câu lệnh khởi tạo (KHOI-TAO.md) sẽ tự điền giúp bạn.",
+  "ten_xuong": "Xưởng video của tôi",
+  "linh_vuc": "Ví dụ: tài chính cá nhân cho người mới đi làm",
+  "language": "vi",
+  "chu_kenh": {
+    "mo_ta": "Ví dụ: kế toán 8 năm kinh nghiệm, mẹ 2 con, sống ở Hà Nội",
+    "xung_ho": "mình – bạn"
+  },
+  "kenh_mau": [
+    {"ten": "Tên kênh mẫu", "url": "https://www.youtube.com/@tenkenh/videos"}
+  ],
+  "content_plan_sheet_id": "",
+  "video": {"khung": "1080x1920", "do_dai_giay": [60, 90], "y_chinh": "3-4"},
+  "caption": {"hashtag_mac_dinh": ["#tag1", "#tag2"]},
+  "drive": {
+    "goc": "",
+    "ke_hoach": "",
+    "final_video": ""
+  },
+  "ban_do_url": ""
+}
