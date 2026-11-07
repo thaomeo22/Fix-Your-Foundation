@@ -1,12 +1,12 @@
 # Xây xưởng video tự động của riêng bạn
 
-Bộ khung này biến Claude Code thành một đội làm video ngắn (dọc 9:16) cho **bất kỳ lĩnh vực nào**: tài chính, nấu ăn, học tập, sức khoẻ, công nghệ… Bạn chỉ làm 3 việc: **duyệt ý tưởng, sửa script một lượt, thu voice + quay cảnh**. Phần còn lại Claude làm.
+Bộ khung này biến Claude Code thành một đội làm video ngắn (dọc 9:16) cho **bất kỳ lĩnh vực nào**: tài chính, nấu ăn, học tập, sức khoẻ, công nghệ… Bạn chỉ làm 3 việc: **duyệt ý tưởng, sửa script một lượt, quay (nói thẳng vào máy)**. Phần còn lại Claude làm.
 
 ```
 1 Nghiên cứu      Claude  quét kênh mẫu → 1 Doc ý tưởng cho cả đợt (vd 7 video/tuần)
 2 Viết script     Claude  đọc transcript bạn dán → 1 Doc script, mỗi video: Hook · Script ghi âm · Caption đăng
 3 Sửa script      Bạn     sửa thẳng trên Doc, một lượt
-4 Up nguyên liệu  Bạn     thu voice + quay cảnh → up vào thư mục "Video NN" trên Drive
+4 Up nguyên liệu  Bạn     quay (nói thẳng vào máy) → up vào thư mục "Video NN" trên Drive
 5 Dựng video      Claude  nhận dạng voice, ghép cảnh theo thứ tự quay, đồ hoạ, phụ đề, kiểm tra
 6 Final           Bạn     lấy video ở thư mục "Final Video" (hoặc trong chat), tự đăng
 ```
@@ -52,7 +52,7 @@ Giữ nguyên ô "Allow package managers" (để cài thư viện từ pypi và 
 |---|---|
 | "Tìm 7 chủ đề cho tuần này" | Tạo Doc ý tưởng trong `00 Kế hoạch`. Bạn duyệt, rồi dán transcript từng video gốc vào chính Doc đó (YouTube → "…Thêm" → "Hiện bản chép lời"). |
 | "Đã dán transcript" | Viết script cả đợt vào 1 Doc, tạo thư mục `Video NN` cho từng video. |
-| "Video 03 đã up" | Tải voice + cảnh quay, dựng, kiểm tra, giao video final kèm caption. |
+| "Video 03 đã up" | Tải clip, chọn take, nhảy cắt, chữ động, kiểm tra, giao video final kèm caption. |
 | "Đồ hoạ to hơn", "phụ đề chậm hơn"… | Sửa đúng bước liên quan và ghi vào file style để lần sau tự làm đúng. |
 
 **Quay cảnh:** quay dọc, đủ sáng, nhiều cảnh làm việc / sinh hoạt hợp chủ đề. Cảnh đang nói vào mic sẽ không khớp miệng với voice thu riêng. Claude ghép cảnh **theo đúng thứ tự quay**, không cắt xen kẽ.

@@ -8,15 +8,35 @@
     "xung_ho": "mình – bạn"
   },
   "kenh_mau": [
-    {"ten": "Tên kênh mẫu", "url": "https://www.youtube.com/@tenkenh/videos"}
+    {
+      "ten": "Tên kênh mẫu",
+      "url": "https://www.youtube.com/@tenkenh/videos"
+    }
   ],
   "content_plan_sheet_id": "",
-  "video": {"khung": "1080x1920", "do_dai_giay": [60, 90], "y_chinh": "3-4"},
-  "caption": {"hashtag_mac_dinh": ["#tag1", "#tag2"]},
+  "video": {
+    "khung": "1080x1920",
+    "do_dai_giay": [
+      45,
+      60
+    ],
+    "kieu_mac_dinh": "noi"
+  },
+  "caption": {
+    "hashtag_mac_dinh": [
+      "#tag1",
+      "#tag2"
+    ]
+  },
   "drive": {
     "goc": "",
     "ke_hoach": "",
     "final_video": ""
   },
-  "ban_do_url": ""
+  "ban_do_url": "",
+  "series": {
+    "ten": "Fix Your Foundation",
+    "handle": "@tenkenh",
+    "noi_chon": "Hà Nội"
+  }
 }

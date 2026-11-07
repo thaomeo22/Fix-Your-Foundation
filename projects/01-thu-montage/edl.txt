@@ -1,0 +1,10 @@
+# Montage thử: 9 clip theo thứ tự tên file, mỗi clip 1 đoạn 2,5s (clip cuối 3s) — chọn đoạn nét, ít rung, thấy rõ móng
+1.MOV   43.20  45.70   # sơn lớp đỏ, móng đỏ rõ
+2.MOV    3.00   5.50   # cận cảnh sơn đỏ, nét nhất clip
+3.MOV    3.00   5.50   # phủ lớp ánh kim
+4.MOV   17.80  20.30   # đưa nam châm tạo mắt mèo, máy đứng yên
+5.MOV    1.30   3.80   # rút cọ khỏi chai
+6.MOV    5.20   7.70   # vệt sáng mắt mèo hiện rõ
+7.MOV    0.30   2.80   # cận móng mắt mèo xanh trên tay
+8.MOV  114.80 117.30   # bàn tay đặt trên khăn, thấy cả 5 móng
+9.MOV    2.80   5.80   # khoe thành phẩm (kết)

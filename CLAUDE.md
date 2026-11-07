@@ -1,6 +1,6 @@
-# Xưởng video tự động
+# Xưởng video tự động — Fix Your Foundation
 
-Đội agent sản xuất video ngắn dọc 9:16. **Mọi thông tin riêng của xưởng nằm trong `studio.json`** (tên xưởng, lĩnh vực, chủ kênh, kênh mẫu, ngôn ngữ, id thư mục Drive, link bản đồ). Đọc file đó trước mọi việc. Nói chuyện với chủ kênh bằng ngôn ngữ trong `studio.json` (`language`).
+Đội agent sản xuất video ngắn dọc 9:16 theo định dạng **Fix Your Foundation** (mẫu: `style/video-mau.mp4`): chủ kênh nói thẳng vào máy, nhiều góc, nhảy cắt, chữ động theo từng từ ở phía trên đầu; hoặc montage cảnh thao tác không lời. **Mọi thông tin riêng của xưởng nằm trong `studio.json`** (tên xưởng, lĩnh vực, chủ kênh, kênh mẫu, ngôn ngữ, id thư mục Drive, link bản đồ). Đọc file đó trước mọi việc. Nói chuyện với chủ kênh bằng ngôn ngữ trong `studio.json` (`language`).
 
 Nếu `studio.json` chưa có hoặc còn trống: làm theo `KHOI-TAO.md` trước.
 
@@ -13,8 +13,8 @@ Nghiên cứu ─> 1 Doc "Đợt DD/MM — Ý tưởng & transcript" trong 00 K�
   ─> [CHỦ KÊNH duyệt ý tưởng, dán transcript vào chính Doc đó]
   ─> Viết script ─> 1 Doc "Script đợt DD/MM" trong 00 Kế hoạch, mỗi video một mục Heading 1 (Hook · Script ghi âm · Caption đăng)
      + tạo thư mục trống "Video NN - <tên>" cho mỗi video
-  ─> [CHỦ KÊNH sửa Doc script một lượt, thu voice, up voice + video quay vào thư mục "Video NN"]
-  ─> Dựng video (lần lượt từng video, cảnh theo thứ tự quay) ─> QA ─> up vào "Final Video" ─> [CHỦ KÊNH tự đăng]
+  ─> [CHỦ KÊNH sửa Doc script một lượt, quay theo style/quay-style.md (tiếng thu cùng hình), up clip vào thư mục "Video NN"]
+  ─> Dựng video (chọn take, nhảy cắt, chữ động — hoặc montage theo thứ tự tên file) ─> QA ─> up vào "Final Video" ─> [CHỦ KÊNH tự đăng]
 ```
 
 ### Cấu trúc Drive (id trong `studio.json` → `drive`)
@@ -23,7 +23,7 @@ Nghiên cứu ─> 1 Doc "Đợt DD/MM — Ý tưởng & transcript" trong 00 K�
   00 Kế hoạch/                     drive.ke_hoach     — mỗi đợt: 1 Doc ý tưởng & transcript + 1 Doc script
   Final Video/                     drive.final_video  — 1 file video final cho mỗi video
   Video NN - <tên>/                id ghi trong projects/<slug>/project.json (`drive_folder`)
-    <voice>, <video quay>          chủ kênh up (Claude không tạo file nào ở đây)
+    <clip quay 1, 2, 3…>, <ảnh>    chủ kênh up (Claude không tạo file nào ở đây)
 ```
 Công cụ Google Drive chỉ **tạo** file/thư mục và **đọc** nội dung, không sửa được Doc có sẵn. Cần sửa thì nhờ chủ kênh sửa hoặc gửi nội dung trong chat — không tạo Doc mới để thay thế. Tìm file trong thư mục: `search_files` với `parentId = '<id>'`, đi hết `nextPageToken`.
 
@@ -31,7 +31,7 @@ Công cụ Google Drive chỉ **tạo** file/thư mục và **đọc** nội dun
 |---|---|---|
 | `nghien-cuu` | Chọn chủ đề từ kênh mẫu, tránh trùng chủ đề đã làm | Doc ý tưởng & transcript |
 | `viet-script` | Rút gọn video mẫu thành script theo style xưởng, kiểm tra nguồn | Doc script của đợt |
-| `dung-video` | Script đã sửa + voice + video quay → video final: cảnh theo thứ tự quay, đồ hoạ, phụ đề | `work/<slug>/final.mp4` |
+| `dung-video` | Clip quay → video final: chọn take, nhảy cắt đổi góc, chữ động (kiểu `noi`) hoặc montage 2–3s/clip theo tên file (kiểu `montage`) | `work/<slug>/final.mp4` |
 | `qa-video` | Kiểm tra trước khi giao | Kết quả vào nhật ký |
 
 Mỗi khi một bước xong, cập nhật:
@@ -44,10 +44,10 @@ Mỗi khi một bước xong, cập nhật:
 ## Quy tắc chung
 - Không bịa trải nghiệm cá nhân của chủ kênh. Câu kể chuyện riêng chưa chắc đúng → đánh dấu **[xác nhận]**.
 - Mọi số liệu / nghiên cứu trong script phải có nguồn kiểm tra được, ghi ở cuối mỗi script.
-- Video final: dài đúng bằng voice, 1080×1920, 30fps.
+- Video final: 1080×1920, 30fps, dài đúng bằng tổng các đoạn trong `edl.txt`.
 - Không đưa tên model AI vào commit, file hay video.
 - File media không commit — để trong `work/` (đã gitignore).
-- Style: `style/script-style.md`, `style/edit-style.md`. Chủ kênh góp ý gì thì ghi luôn vào file style để lần sau tự làm đúng.
+- Style: `style/script-style.md`, `style/edit-style.md`, `style/quay-style.md` (gửi chủ kênh). Chủ kênh góp ý gì thì ghi luôn vào file style để lần sau tự làm đúng.
 
 ## Môi trường
 - Chạy `bash setup.sh` đầu mỗi phiên.

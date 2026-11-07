@@ -1,0 +1,5 @@
+work/
+.cache/
+studio.local.json
+__pycache__/
+*.pyc

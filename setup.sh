@@ -8,9 +8,9 @@ ROOT="$(cd "$(dirname "$0")" && pwd)"
 # Nhận dạng giọng nói (Whisper) chạy bằng Python hệ thống
 python3 -m pip install -q faster-whisper
 
-# Font hỗ trợ tiếng Việt cho đồ hoạ
+# Font hỗ trợ tiếng Việt cho chữ động: Newsreader (serif), Inter Tight (sans đậm), Great Vibes (viết tay)
 F="$ROOT/.cache/fonts"; mkdir -p "$F"
-for p in @fontsource/fraunces @fontsource/dancing-script @fontsource/patrick-hand @fontsource/ibm-plex-mono; do
+for p in @fontsource/newsreader @fontsource/inter-tight @fontsource/great-vibes; do
   d="$F/$(echo $p | tr '/@' '__')"
   [ -d "$d" ] && continue
   mkdir -p "$d" && (cd "$d" && t=$(npm pack -q "$p" 2>/dev/null | tail -1) && tar xzf "$t" && rm "$t")
