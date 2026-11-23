@@ -17,3 +17,4 @@
 |---|---|---|
 | 07/11/2026 | dung-video | Dựng quy trình Fix Your Foundation (chữ động, chọn take, montage); dựng thử video 00 từ 9 clip Drive |
 | 07/11/2026 | nghien-cuu + viet-script | Chọn 7 ý tưởng từ bảng 164 reels (4 kênh nail), viết script vào Doc "Đợt 07/11 — Ý tưởng & Script" |
+| 23/11/2026 | viet-script | Bỏ series: 7 script đợt 07/11 chuyển thành tập lẻ (gửi danh sách sửa trong chat, chủ kênh sửa trên Doc) |

@@ -29,7 +29,7 @@ Lệnh chung: `bash pipeline/make_video.sh projects/<slug> <bước>`.
 
 ## 4. Chữ động (chỉ kiểu `noi`)
 - `lines.txt`: 1 dòng / 1 đoạn edl, sửa chính tả theo script, thêm đánh dấu (`** __ !! (( // |`) theo `edit-style.md`.
-- `graphics.py` (mẫu: `projects/_mau/graphics.py`): `captions(y=…, hide=…)`, `title_card` (từ `studio.json` → `series`), `card`/`counter`/`img` cho nhịp 5–6. Dùng `C.t("từ khoá")` để lấy mốc thời gian.
+- `graphics.py` (mẫu: `projects/_mau/graphics.py`): `captions(y=…, hide=…)`, `card`/`counter`/`img` cho nhịp 5–6. Dùng `C.t("từ khoá")` để lấy mốc thời gian.
 - Xem thử nhanh: `node pipeline/gfx/render.js work/<slug>/overlay.html <dir> times 1.5,8,20` rồi chồng lên `base.mov`.
 - Chạy `gfx`.
 

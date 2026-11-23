@@ -19,7 +19,7 @@ Có 2 kiểu dựng, ghi trong `project.json` → `"kieu"`:
 - **Chọn take:** đọc `takes.txt`. Câu nào nói nhiều lần → lấy lần **cuối cùng nói trơn tru**. Bỏ câu vấp, ậm ừ, khoảng lặng.
 - **Nhảy cắt (jump cut)** giữa các câu: cắt sát từ đầu/cuối (chừa ~0,08s trước, ~0,12s sau). Không để lặng > 0,3s.
 - **Đổi cỡ cảnh** mỗi 1–3 câu: đổi góc máy (clip khác) hoặc punch-in `zoom 1.12–1.2` trên cùng clip. Hai đoạn liền nhau cùng clip thì phải khác zoom.
-- Thứ tự góc gợi ý theo video mẫu: chính diện ngồi ghế (hook) → góc cao nhìn xuống (lời hứa) → cận cầm máy selfie (giới thiệu/title card) → chính diện (uy tín, hoài nghi) → qua vai nhìn màn hình / cảnh thao tác (dữ liệu, `cover=`) → chính diện (kết quả) → nghiêng ở bàn làm việc (con số trước/sau) → chính diện (kết).
+- Thứ tự góc gợi ý theo video mẫu: chính diện ngồi ghế (hook) → góc cao nhìn xuống (lời hứa) → cận cầm máy selfie (giới thiệu) → chính diện (uy tín, hoài nghi) → qua vai nhìn màn hình / cảnh thao tác (dữ liệu, `cover=`) → chính diện (kết quả) → nghiêng ở bàn làm việc (con số trước/sau) → chính diện (kết).
 - Cảnh thao tác chứng minh (sản phẩm, màn hình, tay làm) chèn bằng `cover=<clip>@<giây>` — tiếng vẫn là lời nói.
 
 ### Chữ động (`pipeline/gfx/lib.py`)
@@ -33,7 +33,7 @@ Có 2 kiểu dựng, ghi trong `project.json` → `"kieu"`:
   - `((chữ))` vòng elip — chỗ đảo ngược / mốc thời gian (vd ((không tin)), ((2 tháng))).
   - `//` dòng phụ nhỏ lệch phải ("vì // trông nó"), `|` ngắt cụm.
 - Đồ hoạ phụ (chỉ khi có lý do):
-  - `title_card` sau phần uy tín: tên series + vai trò + "Eps #NN · @handle · nơi chốn" (lấy từ `studio.json` → `series`).
+  - **Không dùng `title_card`**: mỗi video là tập lẻ, không có tên series (chủ kênh, 23/11/2026).
   - `card` ảnh chụp màn hình bằng chứng (bài báo, biểu đồ) ở nửa trên + dòng nguồn. Ẩn chữ lúc card hiện.
   - `counter` số chạy cho kết quả trước → sau. `img` logo/sản phẩm nhỏ bay cạnh chữ. `cloud` rải các từ quanh 1 chữ to.
 - Không che mặt: đồ hoạ trong vùng y 120–700 hoặc cạnh người.
