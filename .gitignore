@@ -1,0 +1,10 @@
+work/
+.cache/
+
+
+__pycache__/
+*.mp4
+*.mov
+*.MOV
+*.m4a
+*.wav
